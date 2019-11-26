@@ -582,6 +582,10 @@ a {
 
 @media (min-width: 0px) and (max-width: 1334px){
 
+  .glide{
+    height: auto;
+  }
+
   .logo, .lang_wrap{
     display:block;
     position: absolute !important;
