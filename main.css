@@ -21,6 +21,11 @@ body{
     margin: auto;
 }
 
+
+.container_pp{
+  padding: 15% 10% 15% 10%;
+}
+
 .container_pr { 
     display: grid;  
     max-width: 1140px;
@@ -130,6 +135,11 @@ body{
 
 .text_normal{
   margin-bottom: 5vh; 
+  font-size: 20px; 
+  font-weight: 100;
+}
+
+.text_normal_2{
   font-size: 20px; 
   font-weight: 100;
 }
