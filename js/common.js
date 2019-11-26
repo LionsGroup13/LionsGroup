@@ -212,7 +212,6 @@ $(document).ready(function () {
     fadeIn: 200,
     weight: true,
     weightSize: 1.5,
-    maxBrightness: 0.2 // непрозрачность (40%)
   })
 });
 
@@ -228,5 +227,4 @@ $(document).ready(function () {
   });
 
 });
-
 
