@@ -12,13 +12,13 @@
     <meta property="og:image:type" content="image/jpeg">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.min.css">
-    <title>Contact Us</title>
+    <title>About Us</title>
   </head>
 
   <body>
     <div class="lang">
-      <a href="/" class="active">En</a>
-      <a href="#">Ru</a>
+      <a href="/about.html">En</a>
+      <a href="/" class="active">Ru</a>
     </div>
     
     <div class="logo">
@@ -44,13 +44,13 @@
       <div class="menu-content" data-menu-top="Menu" data-menu-bottom="LionsGroup it's the digital world">
         <div class="menu">
           <div class="menu__item">
-            <a href="about.html">About Us</a>
+            <a href="about-ru.html">О нас</a>
           </div>
           <div class="menu__item">
-            <a href="projects.html">Our projects</a>
+            <a href="projects-ru.html">Проекты</a>
           </div>
           <div class="menu__item">
-            <a href="contact.html">Contact Us</a>
+            <a href="contact-ru.html">Контакты</a>
           </div>
         </div>
       </div>
@@ -58,81 +58,31 @@
 
     <div class="bg" style="background-image:url('img/ns.png')">
     </div>
-    <section class="section contact-page">
+    <section class="section about-page">
       <div class="main-container">
         <div class="main-container__left">
           <div class="content">
-            <h2 class="title title__h2 content__title">Contact us</h2>
+            <span class="content__subtitle">Кем мы являемся</span>
+            <h2 class="title title__h2 content__title">О нас</h2>
             <div class="content__text">
-              We’d love to hear what you’re working on and figure out where we fit in. Get in touch with us to discuss
-              your project, request a quote or even just to pick our brains. We’re always open to making new
-              connections.
+              LionsGroup это молодая и амбициозная компания, основной деятельностью которой является разработка собственных мобильных приложений для устройств с операционными системами iOS / Android.
+              <br><br>
+              Наш девиз: мы сохраняем время! Поскольку время является одним из важных ресурсов в жизни каждого человека, мы помогаем сохранить его, создавая классные и удобные приложения.
+              <br><br>
+              Помимо разработки собственных приложений, наше агентство также создает приложения для клиентов из различных отраслей бизнеса
             </div>
-            <div class="content__form">
-              <form action="#" method="POST" id="contactForm">
-                <fieldset>
-                  <label for="cName" class="label">Name</label>
-                  <input id="cName" name="name" type="text" class="input" placeholder="Enter your name" required>
-                </fieldset>
-                <fieldset>
-                  <label for="cEmail" class="label">Email address</label>
-                  <input id="cEmail" name="email" type="email" class="input" placeholder="Enter your email" required>
-                </fieldset>
-                <fieldset>
-                  <label for="cMess" class="label">Message</label>
-                  <textarea id="cMess" name="message" class="textarea" placeholder="Write your question"></textarea>
-                </fieldset>
-              </form>
-              <button class="btn-more" type="submit" form="contactForm" value="Submit">
+            <div class="content__btn">
+              <a href="contact-ru.html" class="btn-more">
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Submit</span>
-              </button>
+                <span class="button-text">Связаться</span>
+              </a>
             </div>
           </div>
         </div>
-        <div class="main-container__right">
-          <div class="content">
-            <span class="content__subtitle coffe-title">LET’S HAVE A <span
-                style="background-image: url('img/cup.svg');"></span> AND DISCUSS OUR PROJECT</span>
-            <div class="content__contacts">
-              <div class="office">
-                <h3 class="title title__h3">Our office</h3>
-                <div class="content__text">
-                  220116, Republic of Belarus, Minsk, <br>
-                  Gazety Pravda avenue, 29, office 309
-                </div>
-              </div>
-              <div class="map-link">
-                <a target="_blank" href="https://goo.gl/maps/X2icaPVQQnomFTyJ7" class="btn-more">
-                  <span class="circle">
-                    <span class="icon arrow"></span>
-                  </span>
-                  <span class="button-text">See on map</span>
-                </a>
-              </div>
-              <div class="work-hours">
-                <h3 class="title title__h3">Working hours</h3>
-                <div class="content__text">
-                  9AM - 6PM, Mon to Fri
-                </div>
-              </div>
-              <div class="contact-links">
-                <h3 class="title title__h3">Contact</h3>
-                <div class="content__text">
-                  <a href="mailto:hello@lionsgroup.design">hello@lionsgroup.design</a>
-                  <a href="tel:+375447552363">+375 44 7 552 363</a>
-                </div>
-              </div>
-            </div>
-            <div class="content__social">
-              <a href="#" title="WhatsApp" target="_blank"><img src="img/cont/wh.svg" alt=""></a>
-              <a href="#" title="Telegram" target="_blank"><img src="img/cont/tl.svg" alt=""></a>
-              <a href="#" title="Instagram" target="_blank"><img src="img/cont/in.svg" alt=""></a>
-              <a href="#" title="Facebook" target="_blank"><img src="img/cont/fb.svg" alt=""></a>
-            </div>
-          </div>
+        <div class="main-container__right" id="parallax3" data-relative-input="true">
+          <img data-depth="0.1" src="img/_about-us.svg" alt="">
         </div>
       </div>
       <div class="footer">
