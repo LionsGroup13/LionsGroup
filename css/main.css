@@ -840,6 +840,10 @@ p {
   .section-1 {
     padding-top: 6em; } }
 
+.section-2 .main-container__right img, .about-page .main-container__right img {
+  max-width: 80%;
+  margin: auto; }
+
 .section-3 .content {
   max-width: 90%; }
   @media (max-width: 480px) {
@@ -1059,7 +1063,7 @@ p {
 
 .skill {
   width: 50%;
-  max-width: 18.75em; }
+  max-width: 20.75em; }
   .skill:nth-child(-n + 2) {
     margin-bottom: 9.25vh; }
     @media (min-height: 1081px) {
@@ -1073,11 +1077,8 @@ p {
       width: 100%;
       margin-bottom: 50px; } }
   .skill__img {
-    max-width: 131px;
+    max-width: 100px;
     margin-bottom: 25px; }
-    @media (max-width: 1440px) {
-      .skill__img {
-        max-width: 100px; } }
     @media (max-width: 1300px) {
       .skill__img {
         max-width: 70px; } }
@@ -1099,7 +1100,8 @@ p {
     margin-top: 20px;
     font-weight: 300;
     line-height: 1.3;
-    font-size: 1.354vw; }
+    font-size: 1.354vw;
+    max-width: 85%; }
     @media (min-width: 1921px) {
       .skill__offer {
         font-size: 26px; } }

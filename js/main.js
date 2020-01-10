@@ -10656,6 +10656,7 @@ $(document).ready(function () {
       direction: 'vertical',
       slidesPerView: 1,
       mousewheel: true,
+      simulateTouch: false,
       speed: 700,
       keyboard: {
         enabled: true,
