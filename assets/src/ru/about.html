@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    //= ../template/head.html
+    <title>About Us</title>
+  </head>
+
+  <body>
+    <div class="lang">
+      <a href="../about.html">En</a>
+      <a href="#" onclick="return false;" class="active">Ru</a>
+    </div>
+    
+    //= ../template/ru/menu.html
+
+    <div class="bg" style="background-image:url('../img/ns.png')">
+    </div>
+    <section class="section about-page">
+      <div class="main-container">
+        <div class="main-container__left">
+          <div class="content">
+            <span class="content__subtitle">Кем мы являемся</span>
+            <h2 class="title title__h2 content__title">О нас</h2>
+            <div class="content__text">
+              LionsGroup это молодая и амбициозная компания, основной деятельностью которой является разработка собственных мобильных приложений для устройств с операционными системами iOS / Android.
+              <br><br>
+              Наш девиз: мы сохраняем время! Поскольку время является одним из важных ресурсов в жизни каждого человека, мы помогаем сохранить его, создавая классные и удобные приложения.
+              <br><br>
+              Помимо разработки собственных приложений, наше агентство также создает приложения для клиентов из различных отраслей бизнеса
+            </div>
+            <div class="content__btn">
+              <a href="contact.html" class="btn-more">
+                <span class="circle">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Связаться</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-container__right" id="parallax3" data-relative-input="true">
+          <img data-depth="0.1" src="../img/_about-us.svg" alt="">
+        </div>
+      </div>
+      <div class="footer">
+        //= ../template/footer.html
+      </div>
+    </section>
+
+    <script src="../js/main.min.js"></script>
+
+  </body>
+
+</html>
