@@ -46,8 +46,10 @@ var gulp = require("gulp"),
   rigger = require("gulp-rigger"),
   sourcemaps = require("gulp-sourcemaps"),
   sass = require("gulp-sass"),
-  autoprefixer = require("gulp-autoprefixer"),
-  cleanCSS = require("gulp-clean-css"),
+  postcss = require("gulp-postcss"),
+  autoprefixer = require("autoprefixer"),
+  gulpStylelint = require("gulp-stylelint"),
+  cssnano = require("cssnano"),
   uglify = require("gulp-uglify"),
   cache = require("gulp-cache"),
   imagemin = require("gulp-imagemin"),
@@ -91,13 +93,18 @@ gulp.task("ruHtml:build", function () {
 gulp.task("css:build", function () {
   return gulp
     .src(path.src.style)
+    .pipe(
+      gulpStylelint({
+        reporters: [{ formatter: "string", console: true }],
+      })
+    )
     .pipe(plumber())
     .pipe(mode.development(sourcemaps.init()))
     .pipe(sass())
-    .pipe(autoprefixer())
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest(path.build.css))
     .pipe(rename({ suffix: ".min" }))
-    .pipe(cleanCSS())
+    .pipe(postcss([cssnano]))
     .pipe(mode.development(sourcemaps.write("./")))
     .pipe(gulp.dest(path.build.css))
     .pipe(webserver.reload({ stream: true }));
