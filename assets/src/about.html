@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    //= template/head.html
-    <title>About Us</title>
-  </head>
+<head>
+  //= template/head.html
+  <title>About Us</title>
+  //= template/analytics/tm/head.html
+</head>
 
-  <body>
-    <div class="lang">
-      <a href="#" onclick="return false;" class="active">En</a>
-      <a href="/ru/about.html">Ru</a>
-    </div>
-    
-    //= template/menu.html
+<body>
+  //= template/analytics/tm/body.html
+  <div class="lang">
+    <a href="#" onclick="return false;" class="active">En</a>
+    <a href="/ru/about.html">Ru</a>
+  </div>
 
-    <div class="bg" style="background-image: url('img/ns.png');">
-    </div>
-    <section class="section about-page">
-      <div class="main-container">
-        <div class="main-container__left">
-          <div class="content">
-            <span class="content__subtitle">Who we are</span>
-            <h2 class="title title__h2 content__title">About us</h2>
-            <div class="content__text">
-              LionsGroup is a young and ambitious company whose main activity is the development of its own iOS /
-              Android mobile applications.
-              <br><br>
-              Our motto: We are keeping time! Since time is one of the important resources in the life of every person,
-              we help to save it by creating cool and convenient applications.
-              <br><br>
-              In addition to developing its own applications, our agency also creates applications for customers from
-              various branches of business.
-            </div>
-            <div class="content__btn">
-              <a href="contact.html" class="btn-more">
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Work with us</span>
-              </a>
-            </div>
+  //= template/menu.html
+
+  <div class="bg" style="background-image: url('img/ns.png');">
+  </div>
+  <section class="section about-page">
+    <div class="main-container">
+      <div class="main-container__left">
+        <div class="content">
+          <span class="content__subtitle">Who we are</span>
+          <h2 class="title title__h2 content__title">About us</h2>
+          <div class="content__text">
+            LionsGroup is a young and ambitious company whose main activity is the development of its own iOS /
+            Android mobile applications.
+            <br><br>
+            Our motto: We are keeping time! Since time is one of the important resources in the life of every person,
+            we help to save it by creating cool and convenient applications.
+            <br><br>
+            In addition to developing its own applications, our agency also creates applications for customers from
+            various branches of business.
+          </div>
+          <div class="content__btn">
+            <a href="contact.html" class="btn-more">
+              <span class="circle">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Work with us</span>
+            </a>
           </div>
         </div>
-        <div class="main-container__right" id="parallax3" data-relative-input="true">
-          <img data-depth="0.1" src="img/_about-us.svg" alt="">
-        </div>
       </div>
-      <div class="footer">
-        //= template/footer.html
+      <div class="main-container__right" id="parallax3" data-relative-input="true">
+        <img data-depth="0.1" src="img/_about-us.svg" alt="">
       </div>
-    </section>
+    </div>
+    <div class="footer">
+      //= template/footer.html
+    </div>
+  </section>
 
-    <script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 
-  </body>
+</body>
 
 </html>

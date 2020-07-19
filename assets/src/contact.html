@@ -1,105 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    //= template/head.html
-    <title>Contact Us</title>
-  </head>
+<head>
+  //= template/head.html
+  <title>Contact Us</title>
+  //= template/analytics/tm/head.html
+</head>
 
-  <body>
-    <div class="lang">
-      <a href="#" onclick="return false;" class="active">En</a>
-      <a href="/ru/contact.html">Ru</a>
-    </div>
-    
-    //= template/menu.html
+<body>
+  //= template/analytics/tm/body.html
+  <div class="lang">
+    <a href="#" onclick="return false;" class="active">En</a>
+    <a href="/ru/contact.html">Ru</a>
+  </div>
 
-    <div class="bg" style="background-image: url('img/ns.png');">
-    </div>
-    <section class="section contact-page">
-      <div class="main-container">
-        <div class="main-container__left">
-          <div class="content">
-            <h2 class="title title__h2 content__title">Contact us</h2>
-            <div class="content__text">
-              We’d love to hear what you’re working on and figure out where we fit in. Get in touch with us to discuss
-              your project, request a quote or even just to pick our brains. We’re always open to making new
-              connections.
+  //= template/menu.html
+
+  <div class="bg" style="background-image: url('img/ns.png');">
+  </div>
+  <section class="section contact-page">
+    <div class="main-container">
+      <div class="main-container__left">
+        <div class="content">
+          <h2 class="title title__h2 content__title">Contact us</h2>
+          <div class="content__text">
+            We’d love to hear what you’re working on and figure out where we fit in. Get in touch with us to discuss
+            your project, request a quote or even just to pick our brains. We’re always open to making new
+            connections.
+          </div>
+          <div class="content__form">
+            <form action="#" method="POST" id="contactForm">
+              <fieldset>
+                <label for="cName" class="label">Name</label>
+                <input id="cName" name="name" type="text" class="input" placeholder="Enter your name" required>
+              </fieldset>
+              <fieldset>
+                <label for="cEmail" class="label">Email address</label>
+                <input id="cEmail" name="email" type="email" class="input" placeholder="Enter your email" required>
+              </fieldset>
+              <fieldset>
+                <label for="cMess" class="label">Message</label>
+                <textarea id="cMess" name="message" class="textarea" placeholder="Write your question"></textarea>
+              </fieldset>
+            </form>
+            <button class="btn-more" type="submit" form="contactForm" value="Submit">
+              <span class="circle">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Submit</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main-container__right">
+        <div class="content">
+          <span class="content__subtitle coffe-title">LET’S HAVE A <span
+              style="background-image: url('img/cup.svg');"></span> AND DISCUSS OUR PROJECT</span>
+          <div class="content__contacts">
+            <div class="office">
+              <h3 class="title title__h3">Our office</h3>
+              <div class="content__text">
+                220116, Republic of Belarus, Minsk, <br>
+                Gazety Pravda avenue, 29, office 309
+              </div>
             </div>
-            <div class="content__form">
-              <form action="#" method="POST" id="contactForm">
-                <fieldset>
-                  <label for="cName" class="label">Name</label>
-                  <input id="cName" name="name" type="text" class="input" placeholder="Enter your name" required>
-                </fieldset>
-                <fieldset>
-                  <label for="cEmail" class="label">Email address</label>
-                  <input id="cEmail" name="email" type="email" class="input" placeholder="Enter your email" required>
-                </fieldset>
-                <fieldset>
-                  <label for="cMess" class="label">Message</label>
-                  <textarea id="cMess" name="message" class="textarea" placeholder="Write your question"></textarea>
-                </fieldset>
-              </form>
-              <button class="btn-more" type="submit" form="contactForm" value="Submit">
+            <div class="map-link">
+              <a target="_blank" href="https://goo.gl/maps/X2icaPVQQnomFTyJ7" class="btn-more">
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Submit</span>
-              </button>
+                <span class="button-text">See on map</span>
+              </a>
+            </div>
+            <div class="work-hours">
+              <h3 class="title title__h3">Working hours</h3>
+              <div class="content__text">
+                9AM - 6PM, Mon to Fri
+              </div>
+            </div>
+            <div class="contact-links">
+              <h3 class="title title__h3">Contact</h3>
+              <div class="content__text">
+                <a href="mailto:hello@lionsgroup.design">hello@lionsgroup.design</a>
+                <a href="tel:+375447552363">+375 44 7 552 363</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="main-container__right">
-          <div class="content">
-            <span class="content__subtitle coffe-title">LET’S HAVE A <span
-                style="background-image: url('img/cup.svg');"></span> AND DISCUSS OUR PROJECT</span>
-            <div class="content__contacts">
-              <div class="office">
-                <h3 class="title title__h3">Our office</h3>
-                <div class="content__text">
-                  220116, Republic of Belarus, Minsk, <br>
-                  Gazety Pravda avenue, 29, office 309
-                </div>
-              </div>
-              <div class="map-link">
-                <a target="_blank" href="https://goo.gl/maps/X2icaPVQQnomFTyJ7" class="btn-more">
-                  <span class="circle">
-                    <span class="icon arrow"></span>
-                  </span>
-                  <span class="button-text">See on map</span>
-                </a>
-              </div>
-              <div class="work-hours">
-                <h3 class="title title__h3">Working hours</h3>
-                <div class="content__text">
-                  9AM - 6PM, Mon to Fri
-                </div>
-              </div>
-              <div class="contact-links">
-                <h3 class="title title__h3">Contact</h3>
-                <div class="content__text">
-                  <a href="mailto:hello@lionsgroup.design">hello@lionsgroup.design</a>
-                  <a href="tel:+375447552363">+375 44 7 552 363</a>
-                </div>
-              </div>
-            </div>
-            <div class="content__social">
-              <a href="#" title="WhatsApp" target="_blank"><img src="img/cont/wh.svg" alt=""></a>
-              <a href="#" title="Telegram" target="_blank"><img src="img/cont/tl.svg" alt=""></a>
-              <a href="#" title="Instagram" target="_blank"><img src="img/cont/in.svg" alt=""></a>
-              <a href="#" title="Facebook" target="_blank"><img src="img/cont/fb.svg" alt=""></a>
-            </div>
+          <div class="content__social">
+            <a href="#" title="WhatsApp" target="_blank"><img src="img/cont/wh.svg" alt=""></a>
+            <a href="#" title="Telegram" target="_blank"><img src="img/cont/tl.svg" alt=""></a>
+            <a href="#" title="Instagram" target="_blank"><img src="img/cont/in.svg" alt=""></a>
+            <a href="#" title="Facebook" target="_blank"><img src="img/cont/fb.svg" alt=""></a>
           </div>
         </div>
       </div>
-      <div class="footer">
-        //= template/footer.html
-      </div>
-    </section>
+    </div>
+    <div class="footer">
+      //= template/footer.html
+    </div>
+  </section>
 
-    <script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 
-  </body>
+</body>
 
 </html>
