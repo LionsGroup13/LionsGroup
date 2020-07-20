@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/LionsGroup13/lionsgroup"
   },
+  "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^9.8.5",
     "stylelint": "^13.6.1",
