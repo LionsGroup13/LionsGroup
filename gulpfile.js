@@ -9,6 +9,7 @@ var path = {
     img: "assets/build/img/",
     svg: "assets/build/img/",
     fonts: "assets/build/fonts/",
+    configs: 'assets/build/'
   },
   src: {
     html: "assets/src/*.html",
@@ -18,6 +19,7 @@ var path = {
     img: "assets/src/img/**/*.{png,jpg,jpeg}",
     svg: "assets/src/img/**/*.{svg,ico}",
     fonts: "assets/src/fonts/**/*.*",
+    configs: 'assets/src/configs/*'
   },
   watch: {
     html: "assets/src/**/*.html",
@@ -156,6 +158,12 @@ gulp.task("image:build", function () {
     .pipe(gulp.dest(path.build.img));
 });
 
+// else files (ex: config .toml)
+gulp.task('configs:build', function () {
+  return gulp.src(path.src.configs)
+    .pipe(gulp.dest(path.build.configs));
+});
+
 // del build
 gulp.task("del:build", function () {
   return gulp.src(path.clean, { read: false }).pipe(rimraf());
@@ -228,7 +236,8 @@ gulp.task(
       "js:build",
       "fonts:build",
       "image-svg:build",
-      "image:build"
+      "image:build",
+      "configs:build"
     )
   )
 );

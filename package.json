@@ -1,6 +1,6 @@
 {
   "name": "lionsgroup",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Main website lionsgroup.design",
   "author": "AleksJ, VladimirVo [@v1in]",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/LionsGroup13/lionsgroup"
   },
+  "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^9.8.5",
     "stylelint": "^13.6.1",
