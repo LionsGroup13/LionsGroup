@@ -98,4 +98,8 @@ $(document).ready(function () {
     var p4 = new Parallax(s4);
   };
 
+  //init lazy
+  const observer = lozad();
+  observer.observe();
+
 });

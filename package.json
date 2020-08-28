@@ -1,8 +1,8 @@
 {
   "name": "lionsgroup",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Main website lionsgroup.design",
-  "author": "AleksJ, VladimirVo [@v1in]",
+  "author": "Vladimir Vo (@v1in)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^9.0.0",
     "gulp-mode": "^1.0.2",
@@ -39,7 +39,8 @@
   "dependencies": {
     "jquery": "^3.5.1",
     "parallax-js": "^3.1.0",
-    "swiper": "^5.3.8"
+    "swiper": "^5.3.8",
+    "lozad": "^1.15.0"
   },
   "browserslist": [
     "> 1%",
@@ -48,6 +49,7 @@
   ],
   "scripts": {
     "dev": "gulp",
+    "start": "npm run dev",
     "clean": "gulp del:build && gulp cache:clear",
     "prod": "gulp del:build && gulp cache:clear && gulp prod --production"
   }
