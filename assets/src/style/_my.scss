@@ -1727,3 +1727,60 @@ p {
     /* stylelint-enable no-descending-specificity */
   }
 }
+
+//──── privacy ──────────────────────────────────────────────────────────────────────────
+.policy {
+  max-height: 100%;
+  margin-bottom: 0;
+
+  @media (max-height: 450px) and (orientation: landscape) {
+    padding-left: 7em;
+  }
+
+  article {
+    width: 100%;
+    margin: 100px 0;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 480px), (max-height: 450px) and (orientation: landscape) {
+      margin-top: 50px;
+    }
+
+    a:not([href*="mailto"]) {
+      text-decoration: underline;
+      word-break: break-all;
+    }
+
+    a[href*="mailto"] {
+      text-decoration: underline;
+    }
+
+    h1,
+    h3,
+    p,
+    ul li {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin-bottom: 2em;
+    }
+
+    h3,
+    p {
+      margin: 1.5em 0;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    ul li {
+      list-style: disc;
+      margin: 0.25em 0;
+    }
+  }
+}

@@ -2385,3 +2385,39 @@ p {
         .page-404__links a {
           font-size: 16px;
           margin: 14px 0; } }
+
+.policy {
+  max-height: 100%;
+  margin-bottom: 0; }
+  @media (max-height: 450px) and (orientation: landscape) {
+    .policy {
+      padding-left: 7em; } }
+  .policy article {
+    width: 100%;
+    margin: 100px 0; }
+    @media (max-width: 768px) {
+      .policy article {
+        margin-bottom: 0; } }
+    @media (max-width: 480px), (max-height: 450px) and (orientation: landscape) {
+      .policy article {
+        margin-top: 50px; } }
+    .policy article a:not([href*="mailto"]) {
+      text-decoration: underline;
+      word-break: break-all; }
+    .policy article a[href*="mailto"] {
+      text-decoration: underline; }
+    .policy article h1,
+    .policy article h3,
+    .policy article p,
+    .policy article ul li {
+      line-height: 1.2; }
+    .policy article h1 {
+      margin-bottom: 2em; }
+    .policy article h3,
+    .policy article p {
+      margin: 1.5em 0; }
+    .policy article strong {
+      font-weight: bold; }
+    .policy article ul li {
+      list-style: disc;
+      margin: 0.25em 0; }
