@@ -453,23 +453,46 @@ p {
       margin-top: 40px;
     }
 
-    a {
+    .link-item {
+      width: 32px;
+      height: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
+      text-decoration: none;
       border-radius: 50%;
-      height: 40px;
-      width: 40px;
+      background-color: #fff;
+      color: #000;
       transition: all 0.2s ease-in-out;
 
-      @media (max-width: 1023px) {
-        height: 32px;
-        width: 32px;
+      @media (min-width: 1024px), (max-height: 450px) and (orientation: landscape) {
+        height: 40px;
+        width: 40px;
+      }
+
+      svg {
+        fill: #000;
+        width: 60%;
+        height: 60%;
       }
 
       &:hover {
-        opacity: 0.8;
+        svg {
+          fill: #b48728;
+        }
+      }
+
+      &[title="Telegram"] {
+        svg {
+          margin-left: -3px;
+        }
+      }
+
+      &[title="Facebook"] {
+        svg {
+          height: 55%;
+          width: 55%;
+        }
       }
     }
   }
@@ -1457,6 +1480,7 @@ p {
     }
   }
   /* stylelint-enable no-descending-specificity */
+  /* stylelint-disable no-descending-specificity */
   svg {
     max-width: 110px;
 
@@ -1470,6 +1494,7 @@ p {
       max-height: 75px;
     }
   }
+  /* stylelint-enable no-descending-specificity */
 }
 
 .logo-404 {

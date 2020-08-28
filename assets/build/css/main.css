@@ -1320,7 +1320,9 @@ p {
     @media (max-width: 767px) {
       .content__social {
         margin-top: 40px; } }
-    .content__social a {
+    .content__social .link-item {
+      width: 32px;
+      height: 32px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1330,18 +1332,27 @@ p {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      position: relative;
+      text-decoration: none;
       border-radius: 50%;
-      height: 40px;
-      width: 40px;
+      background-color: #fff;
+      color: #000;
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
-      @media (max-width: 1023px) {
-        .content__social a {
-          height: 32px;
-          width: 32px; } }
-      .content__social a:hover {
-        opacity: 0.8; }
+      @media (min-width: 1024px), (max-height: 450px) and (orientation: landscape) {
+        .content__social .link-item {
+          height: 40px;
+          width: 40px; } }
+      .content__social .link-item svg {
+        fill: #000;
+        width: 60%;
+        height: 60%; }
+      .content__social .link-item:hover svg {
+        fill: #b48728; }
+      .content__social .link-item[title="Telegram"] svg {
+        margin-left: -3px; }
+      .content__social .link-item[title="Facebook"] svg {
+        height: 55%;
+        width: 55%; }
 
 .scroll {
   position: absolute;
@@ -2128,6 +2139,8 @@ p {
   z-index: 3;
   top: 40px;
   left: 110px;
+  /* stylelint-disable no-descending-specificity */
+  /* stylelint-enable no-descending-specificity */
   /* stylelint-disable no-descending-specificity */
   /* stylelint-enable no-descending-specificity */
   /* stylelint-disable no-descending-specificity */
