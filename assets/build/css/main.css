@@ -936,6 +936,46 @@ button.swiper-pagination-bullet {
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes fadeInLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; } }
+
+@keyframes fadeInLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOutLeft {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; } }
+
+@keyframes fadeOutLeft {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; } }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1320,7 +1360,9 @@ p {
     @media (max-width: 767px) {
       .content__social {
         margin-top: 40px; } }
-    .content__social a {
+    .content__social .link-item {
+      width: 32px;
+      height: 32px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1330,18 +1372,80 @@ p {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      position: relative;
+      text-decoration: none;
       border-radius: 50%;
-      height: 40px;
-      width: 40px;
+      background-color: #fff;
+      color: #000;
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
-      @media (max-width: 1023px) {
-        .content__social a {
-          height: 32px;
-          width: 32px; } }
-      .content__social a:hover {
-        opacity: 0.8; }
+      @media (min-width: 1024px), (max-height: 450px) and (orientation: landscape) {
+        .content__social .link-item {
+          height: 40px;
+          width: 40px; } }
+      .content__social .link-item svg {
+        fill: #000;
+        width: 60%;
+        height: 60%; }
+      .content__social .link-item:hover svg {
+        fill: #b48728; }
+      .content__social .link-item[title="Telegram"] svg {
+        margin-left: -3px; }
+      .content__social .link-item[title="Facebook"] svg {
+        height: 55%;
+        width: 55%; }
+
+.thx {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: #000;
+  z-index: 5;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  border-radius: 12px; }
+  @media (min-width: 768px) {
+    .thx {
+      left: 50px; } }
+  @media (min-width: 1025px) {
+    .thx {
+      bottom: 50px; } }
+  @media (max-width: 480px) {
+    .thx {
+      max-width: 90%; } }
+  .thx h2 {
+    display: block;
+    color: #28a745;
+    line-height: 1.2; }
+  .thx p {
+    line-height: 2; }
+  .thx__part:nth-child(1) {
+    padding: 10px;
+    background-color: #28a745;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit; }
+  .thx__part:nth-child(2) {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit; }
+  .thx.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-animation: fadeInLeft 0.5s, fadeOutLeft 0.5s 3.5s;
+            animation: fadeInLeft 0.5s, fadeOutLeft 0.5s 3.5s; }
 
 .scroll {
   position: absolute;
@@ -2131,6 +2235,8 @@ p {
   /* stylelint-disable no-descending-specificity */
   /* stylelint-enable no-descending-specificity */
   /* stylelint-disable no-descending-specificity */
+  /* stylelint-enable no-descending-specificity */
+  /* stylelint-disable no-descending-specificity */
   /* stylelint-enable no-descending-specificity */ }
   @media (max-width: 1300px) {
     .logo,
@@ -2385,3 +2491,39 @@ p {
         .page-404__links a {
           font-size: 16px;
           margin: 14px 0; } }
+
+.policy {
+  max-height: 100%;
+  margin-bottom: 0; }
+  @media (max-height: 450px) and (orientation: landscape) {
+    .policy {
+      padding-left: 7em; } }
+  .policy article {
+    width: 100%;
+    margin: 100px 0; }
+    @media (max-width: 768px) {
+      .policy article {
+        margin-bottom: 0; } }
+    @media (max-width: 480px), (max-height: 450px) and (orientation: landscape) {
+      .policy article {
+        margin-top: 50px; } }
+    .policy article a:not([href*="mailto"]) {
+      text-decoration: underline;
+      word-break: break-all; }
+    .policy article a[href*="mailto"] {
+      text-decoration: underline; }
+    .policy article h1,
+    .policy article h3,
+    .policy article p,
+    .policy article ul li {
+      line-height: 1.2; }
+    .policy article h1 {
+      margin-bottom: 2em; }
+    .policy article h3,
+    .policy article p {
+      margin: 1.5em 0; }
+    .policy article strong {
+      font-weight: bold; }
+    .policy article ul li {
+      list-style: disc;
+      margin: 0.25em 0; }
