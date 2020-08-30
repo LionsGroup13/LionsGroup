@@ -936,6 +936,46 @@ button.swiper-pagination-bullet {
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes fadeInLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; } }
+
+@keyframes fadeInLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOutLeft {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; } }
+
+@keyframes fadeOutLeft {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1; }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0; } }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1353,6 +1393,59 @@ p {
       .content__social .link-item[title="Facebook"] svg {
         height: 55%;
         width: 55%; }
+
+.thx {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: #000;
+  z-index: 5;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  border-radius: 12px; }
+  @media (min-width: 768px) {
+    .thx {
+      left: 50px; } }
+  @media (min-width: 1025px) {
+    .thx {
+      bottom: 50px; } }
+  @media (max-width: 480px) {
+    .thx {
+      max-width: 90%; } }
+  .thx h2 {
+    display: block;
+    color: #28a745;
+    line-height: 1.2; }
+  .thx p {
+    line-height: 2; }
+  .thx__part:nth-child(1) {
+    padding: 10px;
+    background-color: #28a745;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit; }
+  .thx__part:nth-child(2) {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit; }
+  .thx.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-animation: fadeInLeft 0.5s, fadeOutLeft 0.5s 3.5s;
+            animation: fadeInLeft 0.5s, fadeOutLeft 0.5s 3.5s; }
 
 .scroll {
   position: absolute;
