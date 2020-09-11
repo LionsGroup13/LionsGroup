@@ -11,7 +11,7 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "stylelint": "^13.6.1",
+    "stylelint": "^13.7.0",
     "stylelint-scss": "^3.18.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-recommended-scss": "^4.2.0",
@@ -32,7 +32,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify-es": "^2.0.0",
     "imagemin-jpeg-recompress": "^7.0.0",
-    "imagemin-pngquant": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
     "gulp-mode": "^1.0.2",
     "chalk": "4.1.0"
   },
@@ -40,7 +40,7 @@
     "jquery": "^3.5.1",
     "parallax-js": "^3.1.0",
     "swiper": "^5.3.8",
-    "lozad": "^1.15.0"
+    "lozad": "^1.16.0"
   },
   "browserslist": [
     "> 1%",
