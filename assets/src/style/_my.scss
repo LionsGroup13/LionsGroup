@@ -673,6 +673,7 @@ p {
 
   .main-container__right {
     width: 55%;
+    margin: auto;
 
     @media (max-width: 1200px) {
       width: 100%;
@@ -937,18 +938,6 @@ p {
 .skill {
   width: 50%;
   max-width: 20.75em;
-
-  &:nth-child(-n + 2) {
-    margin-bottom: 9.25vh;
-
-    @media (min-height: 1081px) {
-      margin-bottom: 100px;
-    }
-
-    @media (max-height: 1200px) {
-      margin-bottom: 50px;
-    }
-  }
 
   @media (max-width: 767px) {
     width: 100%;
