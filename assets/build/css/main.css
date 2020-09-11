@@ -1538,7 +1538,8 @@ p {
       width: 100%; } }
 
 .section-3 .main-container__right {
-  width: 55%; }
+  width: 55%;
+  margin: auto; }
   @media (max-width: 1200px) {
     .section-3 .main-container__right {
       width: 100%;
@@ -1749,14 +1750,6 @@ p {
 .skill {
   width: 50%;
   max-width: 20.75em; }
-  .skill:nth-child(-n + 2) {
-    margin-bottom: 9.25vh; }
-    @media (min-height: 1081px) {
-      .skill:nth-child(-n + 2) {
-        margin-bottom: 100px; } }
-    @media (max-height: 1200px) {
-      .skill:nth-child(-n + 2) {
-        margin-bottom: 50px; } }
   @media (max-width: 767px) {
     .skill {
       width: 100%;
