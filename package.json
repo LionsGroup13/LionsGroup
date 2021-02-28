@@ -1,6 +1,6 @@
 {
   "name": "lionsgroup",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Main website lionsgroup.design",
   "author": "Vladimir Vo (@v1in)",
   "license": "MIT",
@@ -11,13 +11,13 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "stylelint": "^13.7.0",
-    "stylelint-scss": "^3.18.0",
+    "stylelint": "^13.11.0",
+    "stylelint-scss": "^3.19.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-recommended-scss": "^4.2.0",
     "cssnano": "^4.1.10",
-    "prettier": "^2.1.1",
-    "browser-sync": "^2.26.12",
+    "prettier": "^2.2.1",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-stylelint": "^13.0.0",
     "gulp-postcss": "^8.0.0",
@@ -29,7 +29,7 @@
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.5",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^9.0.1",
@@ -38,9 +38,9 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
+    "lozad": "^1.16.0",
     "parallax-js": "^3.1.0",
-    "swiper": "^5.3.8",
-    "lozad": "^1.16.0"
+    "swiper": "^5.3.8"
   },
   "browserslist": [
     "> 1%",

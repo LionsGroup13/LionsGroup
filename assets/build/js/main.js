@@ -10967,7 +10967,7 @@ $(document).ready(function () {
 
   //scroll more
   $("[data-scroll]").on("click", function () {
-    vslider.slideTo(1, 800, false);
+    // vslider.slideTo(1, 800, false);
   });
 
   $(".menu-button").on("click", function () {
